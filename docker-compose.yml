@@ -8,9 +8,9 @@ services:
       MYSQL_DATABASE: pm20261
       MYSQL_PASSWORD: senhausuariopm20261A12345678a
     ports:
-      -"3306:3306"
+      - "3306:3306"
     volumes:
-      - "mysql-data: /var/lib/mysql"
+      - "mysql_data:/var/lib/mysql"
     networks:
       - pm20261-networks
 
