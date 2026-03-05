@@ -1,0 +1,22 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-server
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: pm20261
+      MYSQL_PASSWORD: senhausuariopm20261A12345678a
+    ports:
+      -"3306:3306"
+    volumes:
+      - "mysql-data: /var/lib/mysql"
+    networks:
+      - pm20261-networks
+
+volumes:
+  mysql_data:
+
+networks:
+  pm20261-networks:
+    driver: bridge
