@@ -1,3 +1,8 @@
+# Configurar WSL
+
+# Comandos linux
+
+
 # instalar portainer
 1. 
 
@@ -11,5 +16,5 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 # Configurar compose
 
 ```bash
-docker compose up -build
+docker compose up --build
 ```
